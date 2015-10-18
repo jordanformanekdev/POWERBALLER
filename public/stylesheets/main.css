@@ -1,0 +1,66 @@
+/*
+*/
+
+
+/*
+* Styles for main body of application
+* specifically to control global variables
+* like font and background color
+*
+*/
+
+
+.mainBody{
+	padding: 0px;
+	background-color: #606060;
+	overflow-x: hidden;
+	margin-right: 0px;
+}
+
+
+/*
+* Header Navigation Bar styles
+*/
+.navigationBar
+{
+	color: #FFFFFF;
+	margin: 0px;
+	font-size: 32px;
+	font-style: italic;
+	background-color: #404040;	
+	border-bottom: 2px solid #000000;
+	border-radius: 0px;
+	padding: 10px;
+}
+
+
+/*
+* Sidebar Navigation styles
+*/
+.sidebar-container
+{
+	color: #FFFFFF;
+	background-color: #404040;
+	padding: 0px;
+	height: 100vh;
+}
+
+.sidebarList
+{
+	padding: 0px; 
+	text-align: center;
+}
+
+.sidebarListHeader
+{
+	border-bottom: 1px solid #fff;
+	padding-bottom: 5px;
+}
+
+.sidebarListItem
+{
+	style="list-style-type: none; 
+	text-align: center;
+	padding: 5px;
+	margin: 5px;
+}
