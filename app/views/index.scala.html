@@ -1,7 +1,41 @@
 @(message: String)
 
-@main("Welcome to Play") {
+@header = {
+    <div class="navbar navbar-fluid navigationBar">
+       	<div class="navbar-inner">
+           	<span class="pull-right" target="_blank">Power Baller</span>
+       	</div>
+    </div>
+ }
 
-    @play20.welcome(message, style = "Java")
+@sidebar = {
+	<div class="container-fluid">
+	    <div class="row">
+			<div class="row">
+				<div class="container-fluid sidebar-container col-lg-2 pull-left">
+					<ul class="sidebarList">
+		  				<h1 class="sidebarListHeader">Tools</h1>
+		  				@for(a <- 1 to 10){
+		  					<a href="#"><li class="sidebarListItem">Tool @a</li></a>
+		  				}
+		  			</ul>
+		  		</div>
+			</div>
+		</div>
+	</div>
+}
 
+
+@main("PowerBaller", header, sidebar){
+	<div class="container-fluid">
+		Html content here ...
+	</div>
+   		
+}
+
+
+@import tags._
+
+@notice(message) { color =>
+  Oops, something is <span style="color:@color">wrong</span>
 }
